@@ -1,0 +1,373 @@
+body
+{
+	background: hsl(233, 47%, 7%);
+	font-size: 15px;
+	color: hsl(0, 0%, 100%);
+}
+/*font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;*/
+
+
+.card
+{
+	margin: 9% 10%;
+	height: 400px;
+	width: 80%;
+	background: hsl(244, 38%, 16%);
+	border-radius: 10px;
+}
+
+
+.info-card
+{
+	float: left;
+	height: 400px;
+	width: 50%;
+	
+}
+
+.info-box-card
+{
+	margin: 12% 12%;
+	width: 65%;
+	height: 80%;
+}
+
+.heading,
+.value
+{
+	color:  hsl(0, 0%, 100%);
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 33px;
+}
+
+.heading span
+{
+	color: hsl(277, 64%, 61%);
+}
+
+
+
+.paragraph,
+.name-value
+{
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 13px;
+	margin-top: 30px;
+	line-height: 1.5em;
+}
+
+
+
+.stats
+{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box
+{
+	
+	box-sizing: border-box;
+	width: 25%;
+	height: 50px;
+	text-align: left;
+
+
+}
+
+	
+.value
+{
+	font-size: 20px;
+	line-height: 1.5em;
+
+}
+
+.name-value
+{
+	font-size: 11px;
+}
+
+
+.image
+{
+	float: right;
+	height: 400px;
+	width: 50%;
+	position: relative;
+}
+
+img
+{
+
+	height: 400px;
+	width: 100%;
+
+}
+
+.image::before
+{
+	position: absolute;
+	content: '';
+	background: hsl(277, 64%, 61%);
+	opacity: 0.6;
+	width: 100%;
+	height: 400px;
+}
+
+.image,
+.image::before,
+img
+{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+
+.links
+{
+	text-align: center;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 13px;
+}
+
+.links a 
+{
+	text-decoration: none;
+	color: hsl(277, 64%, 61%);
+}
+
+.links a:hover
+{
+	color: rosybrown;
+}
+
+
+
+/*-------------------- Responsive --------------------*/
+@media screen and (max-width: 955px) {
+.card
+	{
+		margin: 10% 5%;
+		height: 80%;
+		width: 90%;
+		display: flex;
+		flex-direction: column-reverse;
+
+	}
+
+	.info-card
+	{
+		height: 60%;
+		width: 100%;
+		
+	}
+
+	.info-box-card
+	{
+		margin: 10% 10% 3% 10%;
+		width: 80%;
+		height: 90%;
+		
+		
+	}
+
+	.heading,
+	.value
+	{
+		font-size: 27px;
+		text-align: center;
+	}
+
+	.paragraph,
+	.name-value
+	{
+		text-align: center;
+		font-size: 14px;
+		margin-top: 20px;
+		line-height: 1.5em;
+	}
+
+	.stats
+	{
+		margin-top: 10%;
+		flex-direction: row;
+		align-content: space-between;
+		
+	}
+
+	.box
+	{
+		margin-bottom: 12px;
+		width: 70px;
+		height: 50px;
+		text-align: center;
+
+
+	}
+
+		
+	.value
+	{
+		font-size: 18px;
+		line-height: 1.5em;
+
+	}
+
+	.name-value
+	{
+		font-size: 10px;
+	}
+
+	.image
+	{	
+		
+		height: 40%;
+		width: 100%;
+	}
+
+	img
+	{
+
+		height: 40%;
+		width: 100%;
+
+	}
+
+	.image::before
+	{
+		height: 99.5%;
+		width: 100%;
+
+	}
+
+	.image,
+	.image::before,
+	img
+	{
+		
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 0;
+	}
+
+}
+
+
+/*-------------------- MOBILE --------------------*/
+
+@media screen and (max-width: 450px) {
+	
+	.card
+	{
+		margin: 10% 5%;
+		height: 80%;
+		width: 90%;
+		display: flex;
+		flex-direction: column-reverse;
+
+	}
+
+	.info-card
+	{
+		height: 60%;
+		width: 100%;
+		
+	}
+
+	.info-box-card
+	{
+		margin: 10% 10% 3% 10%;
+		width: 80%;
+		height: 90%;
+		
+		
+	}
+
+	.heading,
+	.value
+	{
+		font-size: 27px;
+		text-align: center;
+	}
+
+	.paragraph,
+	.name-value
+	{
+		text-align: center;
+		font-size: 14px;
+		margin-top: 20px;
+		line-height: 1.5em;
+	}
+
+	.stats
+	{
+		margin-top: 20%;
+		flex-direction: column;
+		align-content: space-between;
+		
+	}
+
+	.box
+	{
+		margin-bottom: 12px;
+		width: 70px;
+		height: 50px;
+		text-align: center;
+
+
+	}
+
+		
+	.value
+	{
+		font-size: 18px;
+		line-height: 1.5em;
+
+	}
+
+	.name-value
+	{
+		font-size: 10px;
+	}
+
+	.image
+	{	
+		
+		height: 40%;
+		width: 100%;
+	}
+
+	img
+	{
+
+		height: 40%;
+		width: 100%;
+
+	}
+
+	.image::before
+	{
+		height: 99%;
+		width: 100%;
+
+	}
+
+	.image,
+	.image::before,
+	img
+	{
+		
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 0;
+	}
+
+}
